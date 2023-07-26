@@ -2,10 +2,41 @@
 
 * {
     font-family: "Segoe UI", sans-serif;
+    font-size: 100%;
    /* border: 2px solid red; */
 }
 
+body {
+    background: url(./recipes/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 h1 {
+    text-align: center;
+    font-size: 4.2rem;
+}
+
+section {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    border-radius: 0 15px;
+}
+
+hr {
+    color: red;
+    border: 1px solid red;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+
+.selection {
     text-align: center;
 }
 
@@ -23,18 +54,23 @@ h1 {
     filter: hue-rotate(320deg) saturate(8);
 }
 
+.navbar {
+    display: inline-block;
+
+}
+
 .link-list {
     text-decoration: none;
     color: blue;
 }
 
-.beefcake {
-    color:red;
-}
-
 .link-list:hover,
 .link-list:active {
     color: plum;
+}
+
+.beefcake {
+    color:red;
 }
 
 .ingredients-list, 
@@ -45,9 +81,18 @@ h1 {
     text-align: left;
 }
 
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
 h4 {
     margin-top: 40px;
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 .nutrition {
@@ -64,13 +109,7 @@ h4 {
     width: 5%;
 }
 
-footer {
-    background-color: #eee;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 13px;
-    text-align: center;
-    padding-bottom: 15px;
+footer * {
+    display: inline;
+    font-size: 0.8rem;
 }
