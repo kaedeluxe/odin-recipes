@@ -4,9 +4,33 @@
     font-family: "Segoe UI", sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
+.beefcake {
+    background-color: #000;
+    color: red;
+}
+
+.food-img,
+.beefcake-img {
+    height: auto;
+    width: 200px;
+    display: block;
+}
+
+.beefcake-img:hover {
+    background-image: url("./recipes/busy-beefcake2.png");
+}
+
 .link-list {
     text-decoration: none;
-    color: black;
+    color: blue;
+}
+
+.beefcake {
+    color:red;
 }
 
 .link-list:hover,
@@ -14,12 +38,29 @@
     color: plum;
 }
 
+.ingredients-list, 
 .directions {
+    margin-left: 100px;
+    margin-right: auto;
     width: 50%;
+    text-align: left;
+}
+
+h4 {
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .nutrition {
     margin-left: auto;
     margin-right: auto;
-    display: inline;
+}
+
+.nutrition-title, .nutrition-stat {
+    display: inline-block;
+    width: 10%;
+}
+
+.nutrition-stat {
+    width: 5%;
 }
