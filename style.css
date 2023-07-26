@@ -1,0 +1,25 @@
+/* CSS Style */
+
+* {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.link-list {
+    text-decoration: none;
+    color: black;
+}
+
+.link-list:hover,
+.link-list:active {
+    color: plum;
+}
+
+.directions {
+    width: 50%;
+}
+
+.nutrition {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+}
