@@ -1,9 +1,46 @@
 /* CSS Style */
 
+@media (min-width: 241px) and (max-width: 699px) {
+    /* a little bit bigger screens */
+    section {
+        width: 90%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+ }
+ @media (min-width: 700px) and (max-width: 999px) {
+    /* Basically up to, but not including an iPad */
+    section {
+        width: 80%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+ }
+ @media (min-width: 1000px) and (max-width: 1349px) {
+    /* iPad and bigger */
+    section {
+        width: 70%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+ }
+
+ @media (min-width: 1350px) {
+    section {
+        width: 50%;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+ }
+
 * {
     font-family: "Segoe UI", sans-serif;
     font-size: 100%;
-   /* border: 2px solid red; */
+    /* border: 2px solid red;  */
 }
 
 body {
@@ -14,17 +51,17 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 4.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 section {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 50%;
-    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5%;
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
     border-radius: 0 15px;
 }
@@ -46,7 +83,7 @@ hr {
 
 .food-img {
     height: auto;
-    width: 300px;
+    width: 50%;
     display: block;
 }
 
@@ -75,9 +112,8 @@ hr {
 
 .ingredients-list, 
 .directions {
-    margin-left: 100px;
-    margin-right: auto;
-    width: 50%;
+    margin-left: 5%;
+    margin-right: 10%;
     text-align: left;
 }
 
@@ -95,18 +131,21 @@ h4 {
     font-size: 1.2rem;
 }
 
-.nutrition {
-    margin-left: auto;
-    margin-right: auto;
+.nutrition-block {
+    width: 40%;
+    display: inline-block;
 }
 
-.nutrition-title, .nutrition-stat {
+.nutrition-title,
+.nutrition-stat {
     display: inline-block;
-    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
 }
 
 .nutrition-stat {
-    width: 5%;
+    margin-left: 40px;
 }
 
 footer * {
