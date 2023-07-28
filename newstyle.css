@@ -1,3 +1,5 @@
+@import url(./nord.css);
+
 html {
     box-sizing: border-box;
 }
@@ -8,20 +10,59 @@ html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: inherit;
     font-size: 100%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin: 0;
+    transition: .5s;
 }
 
 body {
-    background-color: #ddd;
+    background-color: var(--nord5);
+}
+
+#navbar {
+    background-color: var(--nord0);
+    padding: 0;
+    margin: 0;
+}
+
+#navbar *{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar img{
+    height: 50px;
+    float:left;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar a {
+    color: var(--nord6);
+    text-decoration: none;
+    height: 50px;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    background-color: var(--nord8);
+    color: var(--nord0);
+}
+
+.selected {
+    background-color: var(--nord1);
+    color: var(--nord10);
 }
 
 #content {
-    background-color: #2b2b2b;
+    background-color: var(--nord5);
     padding: 20px;
     margin: 10px;
-    color: #fff;
-    border: 1px solid #ddd;
+    color: var(--nord0);
 }
 
 h1 {
@@ -30,7 +71,7 @@ h1 {
     font-size: 2rem;
     text-align: center;
     padding: 0 50px 20px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--nord10);
     width: fit-content;
 }
 
@@ -40,46 +81,106 @@ h2 {
     padding: 20px 50px;
 }
 
-.imgboard {
-    width: 300px;
-    padding: 10px 0;
-    display: inline-block;
-    margin: 5%;
-    background-color: #333;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 5px 0 #000000cc;
+h4 {
+    font-size: 1.2rem;
+    padding: 10px
 }
 
-.imgboard img{
+ /* NEEDS FIXING */
+.title-bg img{
+    object-fit: cover;
+    width: 100%;
+    opacity: .4;
+    height: 500px;
+    padding: -50px;
+}
+
+.imgboard {
+    width: 400px;
+    padding: 10px 0;
+    display: inline-block;
+    margin: 10px;
+    background-color: var(--nord6);
+    border: 1px solid var(--nord4);
+    box-shadow: 0 0 5px 0 #00000011;
+    border-radius: 4px;
+}
+
+.imgtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px;
+    border-bottom: 1px solid var(--nord4);
+    height: 55px;
+}
+
+.imgclick{
     display: block;
-    margin: 0 auto;
-    height: 150px;
-    width: 150px;
-    background-size: contain;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 5px 0 #000000cc;
-    border-radius: 2px;
+    margin: 20px auto;
+    height: 16em;
+    width: 16em;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .imgtext {
-    margin: 0;
+    margin: 20px 10px 0;
     padding: 10px 0;
     text-decoration: none;
+    font-size: 1.2rem;
     display: block;
-    width: 100%;
+    width: 90%;
     text-align: center;
-    color: #fff;
+    color: var(--nord0);
+    border: 1px solid var(--nord4);
+    border-radius: 4px;
 }
 
-.imgboard:hover {
-    background-image: linear-gradient(150deg, #00008b, #000);
-    color: #fff;
-    transition: .5s;
-} 
+ .imgboard:hover {
+    box-shadow: 0 20px 15px 0 #00000033;
+}
+
+.imgtext:hover {
+    background-color: var(--nord0);
+    color: var(--nord6);
+}
+
+.quote {
+    display: inline-flex;
+    margin-top: 10px;
+    color: var(--nord3);
+    font-style: italic;
+}
+
+.quote-start,
+.quote-end {
+    width: auto;
+    height: 50px;
+    border: none;
+    box-shadow: none;
+}
+
+.quote-start {
+    margin: -10px 10px;
+    filter: invert(31%) sepia(15%) saturate(712%) hue-rotate(182deg) brightness(97%) contrast(87%);
+}
+
+.quote-end {
+    margin: 10px 10px -10px 10px;
+    filter: invert(31%) sepia(15%) saturate(712%) hue-rotate(182deg) brightness(97%) contrast(87%);
+    transform: rotate(180deg);
+}
+
+.quote p {
+    text-align: center;
+    width: 294px;
+}
 
 #footer {
     margin-top: 10px;
-    background-color: #aaaaaacc;
+    background-color: var(--nord0);
+    color: var(--nord6);
     clear: both;
 }
 
